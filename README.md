@@ -1,8 +1,16 @@
 # CDPC
 
+<div float="left">
+  <img src="src/assets/cdpc_logo.png"/>
+  <img src="src/assets/if_logo.png"/>
+</div>
+
 ### 1 - Descrição
 
-"Criar um App para o Centro de Divulgação e Popularização da Ciência"
+"Criação de um App para o CDPC onde ele marca horários na Experimentoteca (quando houver possibilidade de encontros
+presenciais) e/ou marcar dia e duração de empréstimo de kits, vinculando aos
+dados do professor da rede pública. Além de fornecer as informações de cada kit,
+como dados qualitativos e quantitativos presentes no kit."
 
 ### 2 - Acesso
 
