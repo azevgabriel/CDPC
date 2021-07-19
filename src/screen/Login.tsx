@@ -1,10 +1,20 @@
 import React from 'react';
+
+// import { useNavigation } from '@react-navigation/native';
 import {Image, Text, StyleSheet, TextInput, View, TouchableOpacity} from 'react-native';
 
 import cdpcLogo from '../assets/cdpc_logo.png';
 import colors from '../styles/colors';
 
 export function Login (){
+
+  // const navigation = useNavigation();
+
+  function handleSignIn() {
+    // navigation.navigate('');
+    console.log("Clickou");
+  };
+  
   return (
     <>
       <Image 
@@ -28,7 +38,9 @@ export function Login (){
         </View>
       </View>
       
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={handleSignIn}
+      >
         <Text style={styles.text}>FAQ - Perguntas Frequentes</Text>
       </TouchableOpacity>
     </>
