@@ -12,9 +12,9 @@ presenciais) e/ou marcar dia e duração de empréstimo de kits, vinculando aos
 dados do professor da rede pública. Além de fornecer as informações de cada kit,
 como dados qualitativos e quantitativos presentes no kit."
 
-### 2 - Acesso
+### 2 - Prototipação
 
-Em desenvolvimento
+Acesse a prototipação, <a href="https://whimsical.com/cdpc-GC1JSnTZoS3ZGKyAp1VCnM">clicando aqui!</a>
 
 ### 3 - Pré-requisitos
 
