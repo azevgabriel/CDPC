@@ -10,6 +10,9 @@ export const styles = StyleSheet.create({
   scroll: {
     minHeight: 30,
     maxHeight: 30,
+    marginTop: 5,
+    marginBottom: 15,
+    paddingHorizontal: 10,
   },
   button: {
     flexDirection: 'row',
@@ -29,5 +32,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
+    overflow: 'scroll',
   }
 });

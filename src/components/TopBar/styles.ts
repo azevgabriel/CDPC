@@ -16,6 +16,11 @@ export const styles = StyleSheet.create({
     fontSize: 22,
     color: colors.textGreen,
   },
+  textStrong: {
+    fontSize: 22,
+    color: colors.textGreen,
+    fontWeight: 'bold',
+  },
   rightContainer: {
     height: 80,
     width: 80,

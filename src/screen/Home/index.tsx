@@ -22,7 +22,10 @@ export function Home (){
       <ScrollView 
         style={styles.scroll}
         horizontal
-        showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}     
+        contentContainerStyle={{
+          paddingRight: 20,
+        }}
       >
         <RectButton style={styles.button}>
           <Text style={styles.textButton}>
@@ -50,23 +53,28 @@ export function Home (){
           </Text>
         </RectButton>
       </ScrollView>
-      <View style={styles.content}>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-       <KitCard name="Kit Teste" path={EmptyImg}/>
-      </View>
+      <ScrollView>
+        <View style={styles.content}>
+          <KitCard name="Kit de Biologia 04" type="biologia"/>
+          <KitCard name="Kit de Física 01" type="fisica"/>
+          <KitCard name="Kit de Biologia 01" type="biologia"/>
+          <KitCard name="Kit de Química 04" type="quimica"/>
+          <KitCard name="Kit de Biologia 02" type="biologia"/>
+          <KitCard name="Kit de Química 03" type="quimica"/>
+          <KitCard name="Kit de Física 03" type="fisica"/>
+          <KitCard name="Kit de Física 02" type="fisica"/>
+          <KitCard name="Kit de Biologia 03" type="biologia"/>
+          <KitCard name="Kit de Física 04" type="fisica"/>
+          <KitCard name="Kit de Química 01" type="quimica"/>
+          <KitCard name="Kit de Química 02" type="quimica"/>
+          <KitCard name="Kit de Biologia 02" type="biologia"/>
+          <KitCard name="Kit de Química 03" type="quimica"/>
+          <KitCard name="Kit de Física 03" type="fisica"/>
+          <KitCard name="Kit de Biologia 01" type="biologia"/>
+          <KitCard name="Kit de Química 04" type="quimica"/>
+          <KitCard name="Kit de Biologia 02" type="biologia"/>    
+        </View>
+      </ScrollView>
     </View>
   );
 };

@@ -3,23 +3,22 @@ import colors from '../../styles/colors';
 
 export const styles = StyleSheet.create({
   container: {
-    width: "30%",
-    height: 120,
+    width: "27.5%",
+    height: 110,
+    borderRadius: 10,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-around',
-    borderColor: colors.textRed,
-    borderWidth: 2,
-    borderRadius: 20,
-    marginTop: 6,
+    marginHorizontal: ".2%",
+    marginVertical: 5,
   },
   image: {
-    width: 120,
+    width: 100,
     height: 50,
   },
   text: {
     fontSize: 15,
-    color: colors.textRed,
+    color: "white",
     fontWeight: "700",
   }
 });

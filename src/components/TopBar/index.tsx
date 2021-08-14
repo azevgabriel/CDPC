@@ -1,21 +1,18 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-
-import emptyProfilePicture from '../../assets/emptyProfilePicture.png'
+import { FontAwesome } from '@expo/vector-icons';
 
 import { styles } from './styles';
+import colors from '../../styles/colors';
 
 export const TopBar = () => {
   return (
     <View style={styles.container}>
       <View>
         <Text style={styles.text}>Bem vindo, </Text>
-        <Text style={styles.text}>Mateus</Text>
+        <Text style={styles.textStrong}>Mateus</Text>
       </View>
-      <Image 
-        source={emptyProfilePicture} 
-        style={styles.rightContainer}
-      />
+      <FontAwesome name="user-circle-o" size={75} color={colors.white} />
     </View>
   );
 }
