@@ -19,46 +19,45 @@ export function Home (){
 
   const [typeSelected, setTypeSelected] = useState("");
   const [fields, setFields] = useState<iKit[]>([]);
+  const [newKits, setNewKits] = useState<iKit[]>([]);
 
   useEffect(() => {
-    let kitsSelected;
+    let kitsGrowing;
+    kitsGrowing = kits.data.sort((a,b) => {
+      if (a.title > b.title) {
+        return 1;
+      }
+      if (a.title < b.title) {
+        return -1;
+      }
+      return 0;
+    });
+    setNewKits(kitsGrowing);
+  },[])
+
+  useEffect(() => {
+    
     switch(typeSelected) {
       case "quimica":
-        kitsSelected = kits.data.filter(kit => {
+        setFields(newKits.filter(kit => {
           return kit.type === "quimica";
-        })
-        setFields(kitsSelected);
+        }));
         break;
       case "fisica":
-        kitsSelected = kits.data.filter(kit => {
+        setFields(newKits.filter(kit => {
           return kit.type === "fisica";
-        })
-        setFields(kitsSelected);
+        }));
         break;
       case "biologia":
-        kitsSelected = kits.data.filter(kit => {
+        setFields(newKits.filter(kit => {
           return kit.type === "biologia"
-        })
-        setFields(kitsSelected);
-        break;
-      case "cres":
-        kitsSelected = kits.data.filter(kit => {
-          return kit.type == "biologia"
-        })
-        setFields(kitsSelected);
-        break;
-      case "decres":
-        kitsSelected = kits.data.filter(kit => {
-          return kit.type === "biologia"
-        })
-        setFields(kitsSelected);
+        }));
         break;
       default:
-        kitsSelected = kits.data.map(kit => kit);
-        setFields(kitsSelected);
+        setFields(newKits.map(kit => {return kit}));
         break;
     }
-  }, [typeSelected]);
+  }, [typeSelected, newKits]);
   
   return (
     <View style={styles.container}>
@@ -97,18 +96,10 @@ export function Home (){
         </RectButton>
         <RectButton 
           style={styles.button}
-          onPress={() => setTypeSelected(oldValue => oldValue = "cres")}
+          onPress={() => setTypeSelected(oldValue => oldValue = "all")}
         >
           <Text style={styles.textButton}>
-            Crescente
-          </Text>
-        </RectButton>
-        <RectButton 
-          style={styles.button}
-          onPress={() => setTypeSelected(oldValue => oldValue = "decres")}
-        >
-          <Text style={styles.textButton}>
-            Decrescente
+            Todos
           </Text>
         </RectButton>
       </ScrollView>
