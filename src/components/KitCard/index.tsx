@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { View, Image, Text } from 'react-native';
+import { Text } from 'react-native';
 import { Fontisto } from '@expo/vector-icons'; 
 import { Entypo } from '@expo/vector-icons'; 
 
 import { styles } from './styles';
+import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 interface Props {
+  id: number;
   name: string;
   type: string;
 }
 
-export const KitCard = ({name, type}: Props) => {
+export const KitCard = ({id, name, type}: Props) => {
 
+  const navigation = useNavigation();
   const [hexColor, setHexColor] = useState("");
+
+  function handleDetail() {
+    navigation.navigate('Detail', {idSelected: id});
+  };
 
   useEffect(() => {
     switch (type) {
@@ -29,7 +37,10 @@ export const KitCard = ({name, type}: Props) => {
   }, [type]);
 
   return (
-    <View style={[styles.container, {backgroundColor: hexColor}]}>
+    <RectButton 
+      style={[styles.container, {backgroundColor: hexColor}]}
+      onPress={() => handleDetail()}
+    >
       { (type === 'quimica') && <Fontisto name="test-tube-alt" size={28} color="white" />}
       { (type === 'biologia') && <Entypo name="leaf" size={30} color="white" />}
       { (type === 'fisica') && <Fontisto name="atom" size={30} color="white" />}
@@ -38,6 +49,6 @@ export const KitCard = ({name, type}: Props) => {
       >
         {name}
       </Text>
-    </View>
+    </RectButton>
   );
 }
