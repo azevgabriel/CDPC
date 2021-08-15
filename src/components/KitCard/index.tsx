@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-//import { ImageSourcePropType } from 'react-native';
 import { View, Image, Text } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { Fontisto } from '@expo/vector-icons'; 
+import { Entypo } from '@expo/vector-icons'; 
 
 import { styles } from './styles';
 
 interface Props {
   name: string;
-  type: "quimica" | "fisica" | "biologia";
-  //path: ImageSourcePropType;
+  type: string;
 }
 
 export const KitCard = ({name, type}: Props) => {
@@ -31,11 +30,9 @@ export const KitCard = ({name, type}: Props) => {
 
   return (
     <View style={[styles.container, {backgroundColor: hexColor}]}>
-      <AntDesign name="picture" size={46} color="white" />
-      {/*<Image 
-        style={styles.image}
-        source={path} 
-      />*/}
+      { (type === 'quimica') && <Fontisto name="test-tube-alt" size={28} color="white" />}
+      { (type === 'biologia') && <Entypo name="leaf" size={30} color="white" />}
+      { (type === 'fisica') && <Fontisto name="atom" size={30} color="white" />}
       <Text
         style={styles.text}
       >

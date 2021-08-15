@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import {Image, Text, TextInput, View, Linking} from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 
-import cdpcLogo from '../../assets/cdpc_logo.png';
+import cdpcLogo from '../../assets/images/cdpc_logo.png';
 
 import { styles } from './styles';
 

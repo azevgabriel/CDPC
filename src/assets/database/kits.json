@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "title": "Kit de Termoquímica",
+            "type": "quimica",
+            "description": "Na Termoquímica, os processos e reações que ocorrem com liberação de calor e consequente aumento da temperatura das vizinhanças são chamados de exotérmicos.",
+            "amount": 3
+        },
+        {
+            "title": "Kit de Genética",
+            "type": "biologia",
+            "description": "A genética é a parte da ciência que estuda a hereditariedade, a estrutura e função dos genes e a variação dos seres vivos. É através da genética que buscamos compreender os mecanismos e leis de transmissão das características através das gerações.",
+            "amount": 1
+        },
+        {
+            "title": "Kit de Citologia",
+            "type": "biologia",
+            "description": "A citologia é um ramo da biologia que estuda a célula, a menor unidade estrutural que compõe os seres vivos. O termo citologia deriva das palavras gregas kytos (célula) e logos (estudo).",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Óptica",
+            "type": "fisica",
+            "description": "Óptica é a parte da Física responsável pelo estudo dos fenômenos associados à luz. Os fenômenos relacionados à Óptica são conhecidos desde a Antiguidade. Existem registros de que, em 2.283 a.C., já eram utilizados cristais de rocha para observar as estrelas.",
+            "amount": 4
+        },
+        {
+            "title": "Kit de Eletroquímica",
+            "type": "quimica",
+            "description": "A Eletroquímica é um dos ramos da Físico-Química que estuda as relações existentes entre reações químicas e a corrente elétrica. As reações estudadas na eletroquímica são as de oxidorredução, ou seja, aquelas em que há transferência de elétrons, além de ocorrer, de modo simultâneo, uma oxidação e uma redução de determinadas espécies químicas que participam do processo.",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Mecânica",
+            "type": "fisica",
+            "description": "Mecânica é uma grande área da física que se concentra no estudo do movimento e repouso dos corpos, estejam estes ou não sob a ação de forças. A mecânica divide-se nas áreas de cinemática, dinâmica e estática. Praticamente todos os movimentos que acontecem em nosso cotidiano podem ser descritos pelas equações dessa área.",
+            "amount": 5
+        },
+        {
+            "title": "Kit de Embriologia",
+            "type": "biologia",
+            "description": "A embriologia é uma área da biologia que estuda o desenvolvimento embrionário dos organismos vivos, ou seja, o processo de formação do embrião a partir de uma única célula, o zigoto, que originará um novo ser vivo.",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Equilíbrio Químico",
+            "type": "quimica",
+            "description": "O equilíbrio químico ocorre quando em uma reação reversível (ocorre paralelamente nos dois sentidos), a velocidade da reação direta é igual à velocidade da reação inversa. Quando esse equilíbrio é alcançado, as quantidades de reagentes e produtos envolvidas na reação permanecem estáveis.",
+            "amount": 4
+        },
+        {
+            "title": "Kit de Astronomia",
+            "type": "fisica",
+            "description": "Astronomia é a mais antiga das ciências, surgiu a partir da observação dos astros. Ela estuda o universo e os fenômenos que nele ocorrem.",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Radioatividade",
+            "type": "quimica",
+            "description": "A radioatividade é definida como o fenômeno pelo qual um núcleo instável emite partículas e ondas para atingir a estabilidade. Nem todos os átomos são radioativos, mas os que recebem essa definição se caracterizam por emitir partículas radioativas (radiação), numa busca constante para se tornarem mais estáveis.",
+            "amount": 1
+        },
+        {
+            "title": "Kit de Fisiologia",
+            "type": "biologia",
+            "description": "Ecologia é uma ciência complexa que nos permite entender como os seres vivos relacionam-se uns com os outros e com o ambiente em que vivem. Ao estudar ecologia, podemos compreender melhor a importância de cada espécie do planeta e também como o ambiente influencia na distribuição e na abundância das diferentes espécies. Ao entendermos essas relações, fica mais claro também a importância de preservamos o meio ambiente.",
+            "amount": 6
+        },
+        {
+            "title": "Kit de Ondulatória",
+            "type": "fisica",
+            "description": "Ondulatória é a parte da física que estuda todos os tipos de ondas, sejam elas eletromagnéticas, como a luz, ou mecânicas a exemplo das oscilações que ocorrem na superfície das águas, que é o caso das ondas marítimas.",
+            "amount": 6
+        },
+        {
+            "title": "Kit de Bioquímica",
+            "type": "quimica",
+            "description": "Bioquímica é a ciência que estuda os processos químicos que ocorrem nos organismos vivos. Tratam da estrutura e função metabólica de componentes celulares como proteínas, carboidratos, lipídios, ácidos nucleicos e outras biomoléculas.",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Condução Térmica",
+            "type": "fisica",
+            "description": "A condução térmica é a situação em que o calor se propaga através de um elemento condutor. Ela está ligada com o estado físico do material.",
+            "amount": 2
+        },
+        {
+            "title": "Kit de Imunologia",
+            "type": "biologia",
+            "description": "A imunologia é o ramo da Medicina que busca estudar o sistema imunológico e as condições que podem afetá-lo. O sistema imunológico é composto por células como os linfócitos, leucócitos e fagócitos, que fazem parte da defesa do corpo contra vírus, bactérias, fungos e outros possíveis invasores do organismo.",
+            "amount": 3
+        }
+    ]
+}

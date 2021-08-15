@@ -3,22 +3,19 @@ import colors from '../../styles/colors';
 
 export const styles = StyleSheet.create({
   container: {
-    width: "27.5%",
-    height: 110,
-    borderRadius: 10,
+    width: 120,
+    height: 100,
+    borderRadius: 15,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-around',
-    marginHorizontal: ".2%",
+    justifyContent: 'space-between',
     marginVertical: 5,
-  },
-  image: {
-    width: 100,
-    height: 50,
+    padding: 10,
   },
   text: {
     fontSize: 15,
     color: "white",
     fontWeight: "700",
+    textAlign: "center",
   }
 });
