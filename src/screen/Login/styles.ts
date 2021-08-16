@@ -70,8 +70,11 @@ export const styles = StyleSheet.create({
   },
   textRed: {
     color: colors.textRed,
-    marginBottom: 30,
     fontSize: 19,
     fontWeight: "700",
+    textAlign: 'center',
+  },
+  buttonFAQ: {
+    marginBottom: 30,
   }
 })

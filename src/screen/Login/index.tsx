@@ -15,6 +15,10 @@ export function Login (){
   function handleSignIn() {
     navigation.navigate('Home');
   };
+
+  function handleFAQ() {
+    navigation.navigate('FAQ');
+  };
   
   return (
     <View style={styles.container}>
@@ -46,7 +50,12 @@ export function Login (){
         </View>
       </View>
       
-      <Text style={styles.textRed}>Dúvidas Frequentes</Text>
+      <RectButton 
+        style={styles.buttonFAQ}
+        onPress={() => handleFAQ()}
+      >
+        <Text style={styles.textRed}>Dúvidas Frequentes</Text>
+      </RectButton>
     </View>
   );
 };
