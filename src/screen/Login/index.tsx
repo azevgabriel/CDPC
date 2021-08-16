@@ -44,9 +44,24 @@ export function Login (){
           </RectButton>
         </View>
         <View style={styles.rowRight}>
-          <Text style={styles.textRight}>Primeiro Acesso?</Text>
-          <Text style={styles.textRight}>Esqueceu a senha?</Text>
-          <Text style={styles.textRight}>Alterar a senha?</Text>
+          <Text 
+            style={styles.textRight}
+            onPress={() => Linking.openURL("https://id.ifsuldeminas.edu.br/accounts/login/?next=/")}
+          >
+            Primeiro Acesso?
+          </Text>
+          <Text 
+            style={styles.textRight}
+            onPress={() => Linking.openURL("https://id.ifsuldeminas.edu.br/recuperar_minha_senha/")}
+          >
+            Esqueceu a senha?
+          </Text>
+          <Text 
+            style={styles.textRight}
+            onPress={() => Linking.openURL("https://id.ifsuldeminas.edu.br/recuperar_minha_senha/")}
+          >
+            Alterar a senha?
+          </Text>
         </View>
       </View>
       
