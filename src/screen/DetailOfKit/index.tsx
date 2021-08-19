@@ -35,6 +35,10 @@ export function DetailOfKit ({route}: Props){
         navigate.goBack();
     }
 
+    const handleSchedule = () => {
+        navigate.navigate("Scheduling");
+    }
+
     const initialKit: iKit = {
         id: 0,
         title: "",
@@ -74,7 +78,10 @@ export function DetailOfKit ({route}: Props){
                 >
                     <Text style={styles.textButton}>Voltar</Text>
                 </RectButton>
-                <RectButton style={styles.button} enabled={false}>
+                <RectButton 
+                    style={styles.button} 
+                    onPress={handleSchedule}
+                >
                     <Text style={styles.textButton}>Agendar</Text>
                 </RectButton>
             </View>
