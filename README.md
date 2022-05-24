@@ -1,8 +1,8 @@
 # CDPC
 
 <div float="left">
-  <img src="src/assets/cdpc_logo.png" width="100px"/>
-  <img src="src/assets/if_logo.png" width="100px"/>
+  <img src="src/assets/images/cdpc_logo.png" width="100px"/>
+  <img src="src/assets/images/if_logo.png" width="100px"/>
 </div>
 
 ### 1 - Descrição
